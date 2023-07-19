@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Roboto', sans-serif;
-    
+    scroll-behavior: smooth;
 }
 
 a {
@@ -17,29 +17,28 @@ ul {
     display: flex;
     background-color: black;
 
-
 }
 
 .navigation {
-    margin: 20px;
     display: flex;
     justify-content: space-between;
     align-content: center;
     width: 50%;
-    margin: 0px auto;
-    padding: 50px 0px;
+    margin: 0px 250px;
+    padding: 40px 0px;
 
 }
 
 .griot-logo {
     display: flex;
     color: white;
-    font-weight: 1000;
+    font-weight: 500;
     font-size: 30px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     margin: 0px 30px;
-    padding: 37px;
+    padding: 30px;
     justify-content: flex-start;
+    white-space: nowrap;
 }
 
 
@@ -52,13 +51,14 @@ ul {
 .menu li a {
     display: flex;
     color: white;
-    font-weight: 1000;
-    letter-spacing: 0.5px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
     margin: 0px 20px;
 }
 
 .menu li a:hover {
     color: gainsboro;
+    transition: all ease 0.3s;
 }
 
 .hero-image {
@@ -67,18 +67,122 @@ ul {
     text-align: center;
     display: flex;
     white-space: nowrap;
+    margin-bottom: 60px;
 }
 
 .hero-image h1 {
+    font-family: Roboto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 130px;
+    font-weight: 500;
     color: white;
 }
 
 #month-selection {
-    border: 1px solid lightgrey;
+    display: flex;
+    border: 0.5px solid black;
+    background-color: rgb(240, 238, 238);
+    justify-content: left;
+    width: 70%;
+    align-items: center;
+    margin: 40px 130px;
+    padding: 5px 100px;
+    letter-spacing: 1px;
+    font-size: 24px;
+}
+
+.box-container-1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    /* border: 1px solid black; */
+    width: 70%;
+    margin: 40px 250px;
+    text-align: left;
     
+}
+
+.box-hr {
+    width: 80%;
+    margin: 0 auto;
+    color: lightgray;
+}
+
+.box-container-1 img {
+    height: 200px;
+    width: 300px;
+    object-fit: contain;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.box-text {
+    line-height: 2.5;
+    flex-grow: 3;
+    flex-basis: 0;
+}
+
+.box-container-1 button {
+    float: right;
+    background-color: rgb(227, 177, 9);
+    color: white;
+    padding: 10px;
+    border: 0.5px solid black;
+    border-radius: 2%;
+    font-size: 1.5em;
+    font-weight: 500;
+    flex-shrink: 1;
+    
+}
+
+.griot-footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+
+.footer-container-map {
+    margin: 25px 50px;
+    float: left;
+    text-align: left;
+}
+
+.links {
+    text-align: left;
+    float: left;
+    margin: 30px;
+}
+
+.links h2 {
+    margin-bottom: 30px;
+}
+
+.links i {
+    color: white;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.links a {
+    color: white;
+
+}
+
+.footer-container-shows {
+    float: left;
+    line-height: 3;
+    margin: 10px auto;
+}
+
+.footer-container-social {
+    float: left;
+    line-height: 3;
+    margin: 10px auto;
 }
